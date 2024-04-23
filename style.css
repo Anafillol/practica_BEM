@@ -1,0 +1,245 @@
+
+@font-face {
+    font-family: Jost;
+    src: url("fonts/Jost/static/Jost-Light.ttf");
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Jost;
+    height: 100vh;
+}
+
+:root {
+    --blancoroto: rgb(255, 249, 220);
+    --amarillito: rgb(252, 230, 121);
+    --verdecito: rgb(27, 89, 41);
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    top: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* .icono{
+font-size: 5rem;
+height: 2rem;
+} */
+
+.header__logo {
+    width: 5rem; /* Tamaño deseado en píxeles */
+}
+
+
+.header__imagen {
+    height: 1rem;
+    margin: 2rem;
+}
+
+.header__botonLista {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    font-family: Jost;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 1rem;
+    /*display: flex;
+    position: absolute;
+    right: 0;*/
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+/*.header__nav a{
+text-decoration: none;
+color: black;
+}*/
+
+.header__lista {
+    display: flex;
+    /* Esto es para que se pongan horizontales uno al lado del otro*/
+    padding: 0;
+    /* Si lo quito no pasa nada */
+    list-style-type: none;
+    /*Esto es para que los puntos  de la lista "desaparezcan" */
+
+}
+
+.header__linkLista {
+    text-decoration: none;
+    color: black;
+    font-size: 0.6rem;
+    justify-content: center;
+    display: flex;
+    border: 0.1rem solid;
+    margin: 0.5rem;  
+
+}
+
+.header__elementoLista {
+    padding: 0 1rem;
+    justify-content: center;
+    display: flex;
+}
+
+.header__elementoLista header__elementoLista--desaparece {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .header__elementoLista {
+        display: none;
+    }
+
+    /* .header__elementoLista--desaparece {
+        display: block;
+    } */
+}
+
+
+@media screen and (max-width:768px) {
+.header__linkLista {
+    display: none;
+}
+
+}
+
+.header__div {
+
+    text-align: center;
+
+}
+
+.Estructura__imagenes__tiposFlores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+
+.Estructura__imagenes__tiposFlores img {
+
+    text-align: center;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.Estructura__Imagenes--card1 {
+    grid-column-start: 1;
+    grid-row: 1;
+    /*esto es la fila */
+
+}
+
+.Estructura__Imagenes--card2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.Estructura__Imagenes--card3 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.Estructura__Imagenes--card5 {
+    grid-column: 5 / span 2;
+    /* esto es que la imagen 5 comienza en la columna 5 y ocupa dos columnas */
+    grid-row: 1/ span 2;
+}
+
+.Estructura__Imagenes--card8 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.Estructura__Imagenes--card9 {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 4;
+}
+
+.Estructura__Imagenes--card11 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.Estructura__Imagenes--card12 {
+    grid-column: 5;
+    grid-row: 3 / span 4;
+}
+
+.Estructura__Imagenes--card13 {
+    grid-column: 6;
+    grid-row: 3;
+}
+
+.Estructura__Imagenes--card16 {
+    grid-column: 6;
+    grid-row: 4;
+}
+
+.Estructura__Imagenes--card15 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.Estructura__Imagenes--card14 {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.Estructura__Imagenes--card17 {
+
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.Estructura__Imagenes--card18 {
+
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.Estructura__Imagenes--card21 {
+
+    grid-column: 5;
+    grid-row: 5;
+
+}
+
+.footer__seccion--completa{
+margin-top: 2rem;
+
+}
+
+.header__imagen--center {
+    display: block; /* Asegura que la imagen sea un bloque para aplicar estilos de alineación */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+     text-align: center;  /*Ajusta el texto interno al centro */
+}
+
+.seccion__cardTitulo{
+    text-align: center;
+    font-size: 0.7rem;
+    color: gray;
+    margin-bottom: 3rem;
+}
+
+.seccion__cardTitulo--avisoLegal{
+    text-align: center;
+    color: gray;
+    font-size: 0.5rem;
+    margin: 0.5rem;
+    padding-bottom: 1rem;
+}
